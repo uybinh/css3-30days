@@ -510,6 +510,22 @@ section:first-child {
   text-align: center;
 }
 
+.button-1 {
+  width: 180px;
+  height: 40px;
+  background: transparent;
+  border-width: 5px;
+  -o-border-image: linear-gradient(to top right, #2ECC40, #FFDC00);
+     border-image: -webkit-gradient(linear, left bottom, right top, from(#2ECC40), to(#FFDC00));
+     border-image: linear-gradient(to top right, #2ECC40, #FFDC00);
+  border-image-slice: 1;
+}
+
+.button-1:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2ECC40), to(#FFDC00));
+  background: linear-gradient(to bottom, #2ECC40, #FFDC00);
+}
+
 .button-7 input {
   display: none;
 }

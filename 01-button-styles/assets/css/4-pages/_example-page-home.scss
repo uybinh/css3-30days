@@ -27,6 +27,22 @@ section:first-child {
   }
 }
 
+
+.button-1 {
+  width: 180px;
+  height: 40px;
+  background: transparent;
+  border-width: 5px;
+  border-image: linear-gradient(to top right, $green, $yellow);
+  border-image-slice: 1;
+
+  &:active {
+    background:linear-gradient(to bottom, $green, $yellow);
+  }
+}
+
+
+
 .button-7 {
   input {
     display: none;
