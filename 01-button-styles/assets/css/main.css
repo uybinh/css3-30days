@@ -523,7 +523,11 @@ button {
   outline: none;
 }
 
-.btn, .button-3 {
+[class^='button'] {
+  text-transform: uppercase;
+}
+
+.btn, .button-3, .button-5 span {
   position: relative;
   width: 180px;
   height: 40px;
@@ -562,11 +566,14 @@ button {
   border-radius: 2px;
   -webkit-box-shadow: -1px 1px #aaa, -2px 2px #aaa, -3px 3px #aaa, -4px 4px #aaa, -4px 4px 1px 0 #666666, -4px 4px 2px 1px #999999;
           box-shadow: -1px 1px #aaa, -2px 2px #aaa, -3px 3px #aaa, -4px 4px #aaa, -4px 4px 1px 0 #666666, -4px 4px 2px 1px #999999;
+  -webkit-transition: text-shadow .2s ease-out;
+  transition: text-shadow .2s ease-out;
 }
 
 .button-2:active {
   top: 2px;
   left: -2px;
+  text-shadow: 0px 0px 2px yellowgreen;
   -webkit-box-shadow: -1px 1px #aaa, -2px 2px #aaa, -2px 2px 1px 0 #4d4d4d, -2px 2px 3px 2px #999999;
           box-shadow: -1px 1px #aaa, -2px 2px #aaa, -2px 2px 1px 0 #4d4d4d, -2px 2px 3px 2px #999999;
 }
@@ -581,12 +588,12 @@ button {
 }
 
 .button-3:hover {
-  -webkit-animation: rolling .4s linear infinite forwards;
-          animation: rolling .4s linear infinite forwards;
+  -webkit-animation: rolling .8s linear infinite forwards;
+          animation: rolling .8s linear infinite forwards;
 }
 
 .button-3:active {
-  background-size: 50px 50px;
+  background-size: 40px 40px;
 }
 
 @-webkit-keyframes rolling {
@@ -599,6 +606,46 @@ button {
   to {
     background-position-x: 40px;
   }
+}
+
+.button-5 input {
+  display: none;
+}
+
+.button-5 span {
+  display: block;
+  background-color: gray;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.button-5 span::before {
+  content: 'off';
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 40px;
+  padding: 5px 20px;
+  color: #aaa;
+  background: white;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.button-5 input:checked + span {
+  background-color: #3D9970;
+}
+
+.button-5 input:checked + span::before {
+  content: 'on';
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 96px;
+  padding: 5px 20px;
+  color: #3D9970;
+  background: white;
 }
 
 .button-6 input {
