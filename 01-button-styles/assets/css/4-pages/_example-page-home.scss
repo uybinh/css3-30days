@@ -21,6 +21,11 @@ section:first-child {
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   align-items: center;
+  font-weight: 800;
+
+  button {
+    font-weight: 800;
+  }
 
   .box {
     display: flex;
@@ -35,16 +40,18 @@ button {
   outline: none;
 }
 
-
 .button-1 {
   width: 180px;
   height: 40px;
+  color: $olive;
   background: transparent;
   border-width: 5px;
   border-image: linear-gradient(to top right, $green, $yellow);
   border-image-slice: 1;
+  transition: all .2s ease-in-out;
 
   &:active {
+    color: white;
     background:linear-gradient(to bottom, $green, $yellow);
   }
 }
@@ -64,7 +71,6 @@ button {
               -4px 4px 1px 0 hsla(0,0,40,10%),
               -4px 4px 2px 1px hsla(0,0,60,10%);
 
-
   &:active {
     top: 2px;
     left: -2px;
@@ -73,14 +79,9 @@ button {
                 -2px 2px 1px 0 hsla(0,0,30,10%),
                 -2px 2px 3px 2px hsla(0,0,60,10%);
   }
-
-
 }
 
-
-
-
-.button-7 {
+.button-6 {
   input {
     display: none;
   }

@@ -498,6 +498,11 @@ section:first-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 800;
+}
+
+#buttons button {
+  font-weight: 800;
 }
 
 #buttons .box {
@@ -521,15 +526,19 @@ button {
 .button-1 {
   width: 180px;
   height: 40px;
+  color: #3D9970;
   background: transparent;
   border-width: 5px;
   -o-border-image: linear-gradient(to top right, #2ECC40, #FFDC00);
      border-image: -webkit-gradient(linear, left bottom, right top, from(#2ECC40), to(#FFDC00));
      border-image: linear-gradient(to top right, #2ECC40, #FFDC00);
   border-image-slice: 1;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .button-1:active {
+  color: white;
   background: -webkit-gradient(linear, left top, left bottom, from(#2ECC40), to(#FFDC00));
   background: linear-gradient(to bottom, #2ECC40, #FFDC00);
 }
@@ -553,11 +562,11 @@ button {
           box-shadow: -1px 1px #aaa, -2px 2px #aaa, -2px 2px 1px 0 #4d4d4d, -2px 2px 3px 2px #999999;
 }
 
-.button-7 input {
+.button-6 input {
   display: none;
 }
 
-.button-7 span {
+.button-6 span {
   display: block;
   width: 180px;
   height: 40px;
@@ -566,7 +575,7 @@ button {
   background: gray;
 }
 
-.button-7 span::before {
+.button-6 span::before {
   content: '';
   display: inline-block;
   width: 10px;
@@ -578,12 +587,12 @@ button {
   border-radius: 50%;
 }
 
-.button-7 input:checked + span {
+.button-6 input:checked + span {
   color: white;
   background-color: #3D9970;
 }
 
-.button-7 input:checked + span::before {
+.button-6 input:checked + span::before {
   content: '';
   display: inline-block;
   width: 10px;
