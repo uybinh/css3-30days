@@ -93,6 +93,7 @@ button {
     line-height: 40px;
     color: $silver;
     background: gray;
+    transition: all .1s ease-in-out;
   }
 
   span::before {
@@ -104,6 +105,7 @@ button {
     background: white;
     box-shadow: 0px 0px 0 2px white;
     border-radius: 50%;
+    transition: all .2s ease-in-out;
   }
 
   input:checked {
