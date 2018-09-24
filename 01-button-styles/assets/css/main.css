@@ -480,6 +480,10 @@ hr {
   margin: 0 auto;
 }
 
+.page-title {
+  color: #20503b;
+}
+
 section:first-child {
   text-align: center;
   margin-bottom: 20px;
@@ -510,6 +514,10 @@ section:first-child {
   text-align: center;
 }
 
+button {
+  outline: none;
+}
+
 .button-1 {
   width: 180px;
   height: 40px;
@@ -524,6 +532,25 @@ section:first-child {
 .button-1:active {
   background: -webkit-gradient(linear, left top, left bottom, from(#2ECC40), to(#FFDC00));
   background: linear-gradient(to bottom, #2ECC40, #FFDC00);
+}
+
+.button-2 {
+  position: relative;
+  width: 180px;
+  height: 40px;
+  color: white;
+  background: #3D9970;
+  border: none;
+  border-radius: 2px;
+  -webkit-box-shadow: -1px 1px #aaa, -2px 2px #aaa, -3px 3px #aaa, -4px 4px #aaa, -4px 4px 1px 0 #666666, -4px 4px 2px 1px #999999;
+          box-shadow: -1px 1px #aaa, -2px 2px #aaa, -3px 3px #aaa, -4px 4px #aaa, -4px 4px 1px 0 #666666, -4px 4px 2px 1px #999999;
+}
+
+.button-2:active {
+  top: 2px;
+  left: -2px;
+  -webkit-box-shadow: -1px 1px #aaa, -2px 2px #aaa, -2px 2px 1px 0 #4d4d4d, -2px 2px 3px 2px #999999;
+          box-shadow: -1px 1px #aaa, -2px 2px #aaa, -2px 2px 1px 0 #4d4d4d, -2px 2px 3px 2px #999999;
 }
 
 .button-7 input {
