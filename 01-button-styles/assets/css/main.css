@@ -523,6 +523,15 @@ button {
   outline: none;
 }
 
+.btn, .button-3 {
+  position: relative;
+  width: 180px;
+  height: 40px;
+  color: white;
+  background: #3D9970;
+  border: none;
+}
+
 .button-1 {
   width: 180px;
   height: 40px;
@@ -560,6 +569,36 @@ button {
   left: -2px;
   -webkit-box-shadow: -1px 1px #aaa, -2px 2px #aaa, -2px 2px 1px 0 #4d4d4d, -2px 2px 3px 2px #999999;
           box-shadow: -1px 1px #aaa, -2px 2px #aaa, -2px 2px 1px 0 #4d4d4d, -2px 2px 3px 2px #999999;
+}
+
+.button-3 {
+  text-shadow: 0 0 4px #111;
+  background-position-x: 0;
+  background-size: 20px 20px;
+  background-image: linear-gradient(45deg, #74c8a2 25%, #50b98a 25%, #50b98a 50%, #74c8a2 50%, #74c8a2 75%, #50b98a 75%, #50b98a 100%, #74c8a2 100%);
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.button-3:hover {
+  -webkit-animation: rolling .4s linear infinite forwards;
+          animation: rolling .4s linear infinite forwards;
+}
+
+.button-3:active {
+  background-size: 50px 50px;
+}
+
+@-webkit-keyframes rolling {
+  to {
+    background-position-x: 40px;
+  }
+}
+
+@keyframes rolling {
+  to {
+    background-position-x: 40px;
+  }
 }
 
 .button-6 input {
