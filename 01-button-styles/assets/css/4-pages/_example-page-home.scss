@@ -42,6 +42,8 @@ button {
 
 [class^='button'] {
   text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
 }
 
 .btn {

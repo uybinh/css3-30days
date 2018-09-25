@@ -525,6 +525,11 @@ button {
 
 [class^='button'] {
   text-transform: uppercase;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .btn, .button-3, .button-5 span {
