@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Fira Sans';
   font-style: normal;
@@ -464,6 +465,11 @@ hr {
   height: 0;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .page-home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -532,7 +538,7 @@ button {
           user-select: none;
 }
 
-.btn, .button-3, .button-5 span {
+.btn, .button-3, .button-4, .button-5 span {
   position: relative;
   width: 180px;
   height: 40px;
@@ -611,6 +617,38 @@ button {
   to {
     background-position-x: 40px;
   }
+}
+
+.button-4 {
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.button-4::after {
+  position: absolute;
+  right: 25px;
+  content: '➡';
+  opacity: 0;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.button-4:hover::after {
+  position: absolute;
+  right: 40px;
+  content: '➡';
+  opacity: 1;
+}
+
+.button-4:hover {
+  padding-right: 25px;
+}
+
+.button-4:active {
+  background: white;
+  color: #3D9970;
+  border: 2px solid #3D9970;
+  font-size: 0.8rem;
 }
 
 .button-5 input {
